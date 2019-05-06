@@ -1,12 +1,11 @@
-var https = require('https');                               
-
+var https = require('https');   
 
 function getAndPrintHTMLBuff () {
     var output = "";
 
     var requestOptions = {
       host: 'sytantris.github.io',
-      path: '/http-examples/step1.html'
+      path: '/http-examples/step2.html'
     };
   
   https.get(requestOptions, function (response) {
@@ -20,8 +19,7 @@ function getAndPrintHTMLBuff () {
     response.on('end', function() {
     console.log(output);
     console.log('Response stream complete.');
-    });
-  
+    });  
 });
 }
 getAndPrintHTMLBuff();
