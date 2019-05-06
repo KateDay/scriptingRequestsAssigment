@@ -16,7 +16,7 @@ function getAndPrintHTMLChunks () {
     }
     console.log("Getting ready to make a request...");
     https.request(requestOptions, callback).end();
-    console.log("Request has been made!");
+    console.log("Request has been made! YAY!");
 }
 
 console.log(getAndPrintHTMLChunks());
