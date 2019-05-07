@@ -1,7 +1,4 @@
-module.exports = function getHTML (options, callback) {
-
-    
-    function getHTML (requestOptions, callback) {
+module.exports = function getHTML (requestOptions, callback) {
 
         /* Add your code here */
         var https = require('https');   
@@ -21,28 +18,27 @@ module.exports = function getHTML (options, callback) {
         });  
     });    
     
-    }
+}
     
-    function printHTML (html) {
-        console.log(html);
-        console.log('Response stream complete.');
+//     function printHTML (html) {
+//         console.log(html);
+//         console.log('Response stream complete.');
         
-    }
+//     }
 
-    function saveHTML (html) {
-        // callMyOtherFUNCTIONconsole.log(html);
-        console.log("");
-        console.log("saved")
-    }
+//     function saveHTML (html) {
+//         // callMyOtherFUNCTIONconsole.log(html);
+//         console.log("");
+//         console.log("saved")
+//     }
     
     
-    var requestOptions = {
-        host: 'sytantris.github.io',
-        path: '/http-examples/step4.html'
-    };
+//     var requestOptions = {
+//         host: 'sytantris.github.io',
+//         path: '/http-examples/step5.html'
+//     };
 
 
 
-  getHTML(requestOptions,printHTML);
-  getHTML(requestOptions,saveHTML);
-};
+//   getHTML(requestOptions,printHTML);
+//   getHTML(requestOptions,saveHTML);
